@@ -16,7 +16,7 @@ describe('triangle') do
     expect(scal_triangle.calculate()).to(eq("This is a scalene triangle."))
   end
   it("will not be a triangle if the sum of the lengths of any two sides of a triangle is less than or equal to the length of the third side") do
-    scal_triangle = Triangle.new(2,2,4)
-    expect(scal_triangle.calculate()).to(eq("This is not a triangle."))
+    no_triangle = Triangle.new(2,2,4)
+    expect(no_triangle.calculate()).to(eq("This is not a triangle."))
   end
 end
